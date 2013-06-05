@@ -1,0 +1,34 @@
+ /* Initial */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+* 		{margin:0;padding:0;font-size:9pt;}
+body 	{background:#272822;color:#eceae1;height:100%;}
+
+#sidebar 		{background:#e6e6e6;width:250px;height:100%;position:fixed;left:0;color:#000000;}
+#sidebar.left 	{border-right:1px solid #808080;}
+#sidebar.right 	{border-left:1px solid #808080;}
+
+#sidebar h3 	{margin:5px 10px;color:#82828a;}
+#sidebar ul 	{list-style:none;margin-bottom:5px;}
+#sidebar li 		{padding:3px 0px 3px 15px;border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6;font-family: 'Lato', sans-serif;}
+#sidebar li.active 	{border-top:1px solid #a8a8a8; border-bottom:1px solid #8b8b8b;color:#ffffff;
+						background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8e8e8e), to(#b3b3b3));
+						background: -webkit-linear-gradient(top, #b3b3b3, #8e8e8e);
+						background: -moz-linear-gradient(top, #b3b3b3, #8e8e8e);
+						background: -ms-linear-gradient(top, #b3b3b3, #8e8e8e);
+						background: -o-linear-gradient(top, #b3b3b3, #8e8e8e);
+					}
+
+#article.left 	{margin-right:250px;}
+#article.right 	{margin-left:250px;}
+
+#footer 		{background:#555555;width:100%;height:15px;position:fixed;bottom:0;padding:2px;padding-left:4px;
+					border-top:1px solid #7d7d7d;color:#ffffff;font-family: 'Nanum Gothic', sans-serif;}
+
+.font-Lato 		{font-family: 'Lato', sans-serif;}
+.font-OpenSans 	{font-family: 'Open sans', sans-serif;}
+.font-300 		{font-weight: 300;}
+.font-400 		{font-weight: 400;}
+.font-700 		{font-weight: 700;}

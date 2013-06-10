@@ -38,7 +38,9 @@ a 		{text-decoration: none;}
 #article > header .back > div.twt 	{width:70px;}
 #article > article 	{border-top:1px solid #3c3d39;}
 
-#contents 	{padding:5px 0 0 5px;}
+#contents 	{padding:5px 0 0 0;}
+#contents .linenumbox 		{text-align:center;width:20px;color:#8f9088;}
+#contents .linenumbox > span	{display:block;}
 
 #footer 		{background:#555555;width:100%;height:15px;position:fixed;bottom:0;padding:2px;padding-left:4px;
 					border-top:1px solid #7d7d7d;color:#ffffff;font-family: 'Nanum Gothic', sans-serif;}

@@ -94,9 +94,20 @@ a {text-decoration: none;}
 .settings .right-btn-group {padding-top: 30px;}
 
 .count-down {text-align: center;}
+.count-down .message {
+	font-size: 24px;
+	line-height: 30px;
+}
 .count-down .time {
 	font-size: 72px;
 	line-height: 90px;
 }
 .count-down .time[data-status="near"] {color: #ac130d;}
 .count-down .time[data-status="done"] {color: #4285f4;}
+
+.message-box .message {
+	padding: 15px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 30px;
+}

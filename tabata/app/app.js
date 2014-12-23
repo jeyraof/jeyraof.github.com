@@ -4,6 +4,23 @@ var SettingsDefault = {
 	rest: 10
 }
 
+var SettingsStore = {
+	set: 0,
+	current: 0,
+	duration: 0,
+	rest: 0
+}
+
+function exerciseLoop() {
+	if (SettingsStore.set > SettingsStore.current) {
+		SettingsStore.current += 1;
+		var message = '총 ' + SettingsStore.set + ' 세트중, ' + SettingsStore.current + '번째 세트입니다.';
+		ReactAppend(<CountDownBox countDownTime={SettingsStore.duration} message={message} type='exercise' />);
+	} else {
+		ReactAppend(<MessageBox message='모든 운동이 끝났습니다!' />);
+	}
+}
+
 var Sound = {
 	near: new Audio('static/sound/near.wav'),
 	done: new Audio('static/sound/done.wav')
@@ -28,7 +45,12 @@ var SettingsBox = React.createClass({
 	},
 	handleStart: function(e) {
 		e.preventDefault();
-		ReactAppend(<CountDownBox countDownTime={this.state.duration}/>);
+		SettingsStore.set = this.state.set;
+		SettingsStore.current = 0;
+		SettingsStore.duration = this.state.duration;
+		SettingsStore.rest = this.state.rest;
+
+		exerciseLoop();
 	},
 	render: function() {
 		return (
@@ -61,11 +83,20 @@ var CountDownBox = React.createClass({
 	getInitialState: function() {
 		return {
 			countDownTime: this.props.countDownTime,
+			restTime: this.props.restTime,
 			status: 'doing'
 		};
 	},
 	componentDidMount: function() {
 		this.timer = setInterval(this.tick, 1000);
+	},
+	afterAction: function() {
+		if (this.props.type === 'exercise') {
+			var message = '세트가 끝났습니다! 휴식을 취하세요.';
+			ReactAppend(<CountDownBox countDownTime={SettingsStore.rest} type='rest' message={message} />);
+		} else if (this.props.type === 'rest') {
+			exerciseLoop();
+		}
 	},
 	tick: function() {
 		var before = this.state.countDownTime;
@@ -77,6 +108,8 @@ var CountDownBox = React.createClass({
 			Sound.done.load();
 			Sound.done.play();
 			clearInterval(this.timer);
+
+			this.afterAction();
 		} else if (before < 5) {
 			this.setState({
 				countDownTime: before - 1,
@@ -84,6 +117,7 @@ var CountDownBox = React.createClass({
 			});
 			Sound.near.load();
 			Sound.near.play();
+
 		} else {
 			this.setState({countDownTime: before - 1});
 		}
@@ -91,9 +125,20 @@ var CountDownBox = React.createClass({
 	render: function() {
 		return (
 			<div className="card-box count-down padding-15">
+				<div className="message">{this.props.message}</div>
 				<span className="time" data-status={this.state.status}>{this.state.countDownTime}</span>
 			</div>
 		);
+	}
+});
+
+var MessageBox = React.createClass({
+	render: function() {
+		return (
+			<div className="card-box message-box">
+				<div className="message">{this.props.message}</div>
+			</div>
+		)
 	}
 });
 
@@ -104,5 +149,6 @@ function ReactAppend(a) {
 	reactBoxWrap.appendChild(reactBox);
 
 	React.render(a, reactBox);
+	$('html,body').animate({scrollTop: $(reactBox).offset().top}, 'slow');
 }
 ReactAppend(<SettingsBox />);

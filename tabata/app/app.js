@@ -31,15 +31,15 @@ var SettingsBox = React.createClass({
 				<ul>
 					<li className="input-text">
 						<label>총 세트</label>
-						<input type="text" defaultValue={this.state.set} ref="set" onChange={this.handleSetChange}/>
+						<input type="number" defaultValue={this.state.set} ref="set" onChange={this.handleSetChange}/>
 					</li>
 					<li className="input-text">
 						<label>세트당 운동 시간 (초)</label>
-						<input type="text" defaultValue={this.state.duration} ref="duration" onChange={this.handleDurationChange}/>
+						<input type="number" defaultValue={this.state.duration} ref="duration" onChange={this.handleDurationChange}/>
 					</li>
 					<li className="input-text">
 						<label>세트간 휴식 시간 (초)</label>
-						<input type="text" defaultValue={this.state.rest} ref="rest" onChange={this.handleRestChange}/>
+						<input type="number" defaultValue={this.state.rest} ref="rest" onChange={this.handleRestChange}/>
 					</li>
 				</ul>
 				<div className="right-btn-group">

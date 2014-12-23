@@ -3,16 +3,12 @@ var SettingsDefault = {
 	duration: 20,
 	rest: 10
 }
+
 var Sound = {
-	near: function() {
-		var a = new Audio('static/sound/near.wav');
-		a.play();
-	},
-	done: function() {
-		var a = new Audio('static/sound/done.wav');
-		a.play();
-	}
+	near: new Audio('static/sound/near.wav'),
+	done: new Audio('static/sound/done.wav')
 }
+
 var SettingsBox = React.createClass({
 	getInitialState: function() {
 		return {
@@ -78,14 +74,16 @@ var CountDownBox = React.createClass({
 				countDownTime: '끝',
 				status: 'done'
 			});
-			Sound.done();
+			Sound.done.load();
+			Sound.done.play();
 			clearInterval(this.timer);
 		} else if (before < 5) {
 			this.setState({
 				countDownTime: before - 1,
 				status: 'near'
 			});
-			Sound.near();
+			Sound.near.load();
+			Sound.near.play();
 		} else {
 			this.setState({countDownTime: before - 1});
 		}

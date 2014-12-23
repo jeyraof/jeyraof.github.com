@@ -14,7 +14,7 @@ var SettingsStore = {
 function exerciseLoop() {
 	if (SettingsStore.set > SettingsStore.current) {
 		SettingsStore.current += 1;
-		var message = '총 ' + SettingsStore.set + ' 세트중, ' + SettingsStore.current + '번째 세트입니다.';
+		var message = '총 ' + SettingsStore.set + ' 세트중,\n ' + SettingsStore.current + '번째 세트입니다.';
 		ReactAppend(<CountDownBox countDownTime={SettingsStore.duration} message={message} type='exercise' />);
 	} else {
 		ReactAppend(<MessageBox message='모든 운동이 끝났습니다!' />);
@@ -92,7 +92,7 @@ var CountDownBox = React.createClass({
 	},
 	afterAction: function() {
 		if (this.props.type === 'exercise') {
-			var message = '세트가 끝났습니다! 휴식을 취하세요.';
+			var message = '세트가 끝났습니다!\n 휴식을 취하세요.';
 			ReactAppend(<CountDownBox countDownTime={SettingsStore.rest} type='rest' message={message} />);
 		} else if (this.props.type === 'rest') {
 			exerciseLoop();
@@ -125,7 +125,9 @@ var CountDownBox = React.createClass({
 	render: function() {
 		return (
 			<div className="card-box count-down padding-15">
-				<div className="message">{this.props.message}</div>
+				<div className="message">
+					<pre>{this.props.message.toString()}</pre>
+				</div>
 				<span className="time" data-status={this.state.status}>{this.state.countDownTime}</span>
 			</div>
 		);

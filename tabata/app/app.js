@@ -3,6 +3,16 @@ var SettingsDefault = {
 	duration: 20,
 	rest: 10
 }
+var Sound = {
+	near: function() {
+		var a = new Audio('static/sound/near.wav');
+		a.play();
+	},
+	done: function() {
+		var a = new Audio('static/sound/done.wav');
+		a.play();
+	}
+}
 var SettingsBox = React.createClass({
 	getInitialState: function() {
 		return {
@@ -22,7 +32,7 @@ var SettingsBox = React.createClass({
 	},
 	handleStart: function(e) {
 		e.preventDefault();
-		console.log(this.state);
+		ReactAppend(<CountDownBox countDownTime={this.state.duration}/>);
 	},
 	render: function() {
 		return (
@@ -52,21 +62,49 @@ var SettingsBox = React.createClass({
 });
 
 var CountDownBox = React.createClass({
+	getInitialState: function() {
+		return {
+			countDownTime: this.props.countDownTime,
+			status: 'doing'
+		};
+	},
+	componentDidMount: function() {
+		this.timer = setInterval(this.tick, 1000);
+	},
+	tick: function() {
+		var before = this.state.countDownTime;
+		if (before === 1) {
+			this.setState({
+				countDownTime: '끝',
+				status: 'done'
+			});
+			Sound.done();
+			clearInterval(this.timer);
+		} else if (before < 5) {
+			this.setState({
+				countDownTime: before - 1,
+				status: 'near'
+			});
+			Sound.near();
+		} else {
+			this.setState({countDownTime: before - 1});
+		}
+	},
 	render: function() {
 		return (
-			<div className="card-box count-down">
-				{this.props.time}
+			<div className="card-box count-down padding-15">
+				<span className="time" data-status={this.state.status}>{this.state.countDownTime}</span>
 			</div>
 		);
 	}
 });
 
-function ReactAppend(a, t) {
-	var reactBoxWrap = t;
+function ReactAppend(a) {
+	var reactBoxWrap = document.getElementById('react-boxes');
 	var reactBox = document.createElement('div');
 	reactBox.className = 'react-box';
-	t.appendChild(reactBox);
+	reactBoxWrap.appendChild(reactBox);
 
 	React.render(a, reactBox);
 }
-ReactAppend(<SettingsBox />, document.getElementById('react-boxes'));
+ReactAppend(<SettingsBox />);

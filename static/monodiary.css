@@ -12,12 +12,18 @@ body > .container {
     max-width: 980px;
 }
 
+#profile {
+    margin-bottom: 40px;
+}
 #profile #cover {
     display: block;
     width: 180px;
     margin: 10px auto;
 }
-
 #profile .description .ws {
     margin: 0 5px;
+}
+
+#WorkExperience .work {
+    margin-bottom: 30px;
 }

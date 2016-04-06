@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/jeyraof
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://monodiary.net
+  * I am jeyraof (https://keybase.io/jeyraof) on keybase.
+  * I have a public key with fingerprint A6BD F4C7 B19F D709 C7D6  8149 98AE 86A6 119B 5CF4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b65079f13ba09a8219c3a046091c3b6834084f33b49af09c256810e80ab1817a0a",
+            "fingerprint": "a6bdf4c7b19fd709c7d6814998ae86a6119b5cf4",
+            "host": "keybase.io",
+            "key_id": "98ae86a6119b5cf4",
+            "kid": "0101bea84ca84fb3cece8d9f22e2940c0e38864f44dc87ddb0f0731caeb232d3b7ed0a",
+            "uid": "91dcff2e348af39774c8310d3c560b19",
+            "username": "jeyraof"
+        },
+        "service": {
+            "hostname": "monodiary.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459924117,
+    "expire_in": 157680000,
+    "prev": "138af1539066b59a10ea717d980ff92db49312210709158029827ce751ed0ca2",
+    "seqno": 28,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMN4AnicbVJ7UFRVGN9FklhkBEMdlKCuViIb3nPv3ftYHkZTSLlTIY4PIHbPvfdc
+uCB7l93lsSKiiOgEQxnyaNSGICQHBmKGYiKdkFBs1nYcapwe4kgKvUSiiKxG6izZ
+TH90Zs6cOd/5/X7f7/u+MxK6RGfQt/TUnA4/kT2n955vLtbtDOxuLCdETfYQ5nKi
+AC0eaI+MXG5rgSoTZoIEJBBZE8kJCqBFSAqQp4Ag0ZBkWFIAEi2yPM2QPKPQtMgI
+UCEFiTKxPCART0IR8ICDJCSMhKLac5HT4VTtbiwLWVFWGIkTgaDIHOZwMuYwgsBD
+xLOQBUAQTZLCYGKe5vIzsDkRulC8quEYvlgX7f0P/j++EeQZCW9FpCUkIV4WFIpC
+lMCQEolonmcZhWFkiedkWSQVkqOBBJFI0ZRMixySF30X/5MHyJKiUIhmeKjQAscx
+Ek8DUqYlE0viIvxAF3LaYSHC6HzkcUJNISqMBA6WqBLy99VfyH1AoWbXZBU6PfF2
+5MZch1Nza5K2Bz/lud0Os5/p9jj80FIkWu+LWEXVLuM2YkIJcrpUzU6YAUZKbtWv
+ChiTIFAMAJyRQGUO1Ymsqh9h4liexMufBpVgSUDjIoCJFkiWFU0CxLOCHOBkgScV
+RaBkPEcaUBQg8WCAiScpgac4CXEmgHsiQYrwl1Vk1wgzxWOfMBdrutRcO3QXOxFR
+MXw+O1CnN+iWPhDg/186Q3DYv7+uKydM15eqH/h9rU2bZC3Gt6uOEPtOrnme1E/7
+vogsu2DbdKo9IGN1naPFs+794oYDsYZ7vUfOjU4HSLXty2rjtpe2LGhP3w69mvjm
+t6ebhmcK5Q8enanN3LUiuGk0/2T/wA1LD+3R6R86cHvZ1rm5hUuZ/UEb//B2Jm15
+N2O049LwBapaXdU6mV10MWOa5ryWAltnVvMziXcnt0T3VGYXly89FJoem+p9lVrw
+jc298dStsYYb0oM3J378LjUpwffNZqoPPr4u1Xw8nAz5ujXssVtdMSOr6uOmb84H
+Djw3tLeqZnbFvM1q3hGne+vc7pcnv0yO/XxzZ0rI9eDpxN7KqPlj15JiJ8I/Ca46
+PF64Ho53bSt1jkVkbneY90zAnyzp34/lthz1bQjZ1XwtZjChusLXZria0+Dsbky8
+E3H2sxdfspS1b4uMuVyXs9x+54Qjj7lyZXZ5zdQrr//JGsf6k2YnLY3xCR1pfXcr
+An74eGV3T0RhnCs6zfZkyplf2lqDon/uyOdCWtu+SsnTnxqJHtox2vSEcnnw4Y4N
+4b8GOI79tXpwLvdMV9dHo4f2tdUdbF+SLHn3V3vvRWRtjAx6JI1LMvRHxU9FHQys
+TK9/Yeq9odaL5mhHW/LRyCyfrmpiPEd69p0PHQhaVsbX7yxht36aEwOMvdf3rjdk
+pubpfrPtLurZn5TS+9qmlpnjZ9es/RtXLLVY
+=mVqn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeyraof
+
+==================================================================

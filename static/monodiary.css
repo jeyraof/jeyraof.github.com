@@ -24,6 +24,10 @@ body > .container {
     margin: 0 5px;
 }
 
+#Deprecated {
+    margin-bottom: 60px;
+}
+
 #WorkExperience .work {
     margin-bottom: 50px;
 }

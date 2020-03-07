@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/jeyraof
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://monodiary.net
+  * I am jeyraof (https://keybase.io/jeyraof) on keybase.
+  * I have a public key with fingerprint A6BD F4C7 B19F D709 C7D6  8149 98AE 86A6 119B 5CF4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101b65079f13ba09a8219c3a046091c3b6834084f33b49af09c256810e80ab1817a0a",
+      "fingerprint": "a6bdf4c7b19fd709c7d6814998ae86a6119b5cf4",
+      "host": "keybase.io",
+      "key_id": "98ae86a6119b5cf4",
+      "kid": "0101bea84ca84fb3cece8d9f22e2940c0e38864f44dc87ddb0f0731caeb232d3b7ed0a",
+      "uid": "91dcff2e348af39774c8310d3c560b19",
+      "username": "jeyraof"
+    },
+    "merkle_root": {
+      "ctime": 1583569624,
+      "hash_meta": "daac23fd00568669eaae6065791d6ae1c36254ee0c09f657ca71e3985934d4e0",
+      "seqno": 15123400
+    },
+    "revoke": {
+      "sig_ids": [
+        "766a0931dae69a529a6ee4a768318a5ec9d08a1da2cbb7ab07105930ca3cb99f0f"
+      ]
+    },
+    "service": {
+      "hostname": "monodiary.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1583569654,
+  "expire_in": 157680000,
+  "prev": "16c560fbeb6e3c28f5762d2bf50145bba1129779a8d26b527e76ef4a0a73a6aa",
+  "seqno": 62,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMP9AnicbVMNbBRFGL0WjkoDoVis/LceFQupZGZndna3oCC1VRONFKwECpwzu7Pt
+0t7tde960JICEooNKUj511IUpfxUrEUkRalKoQ0EooFWkKgICFREEQmlEhKpsxWj
+MW6y2ezM+773vvdmWgf28cTHbG5YsWNwzZyumBOHF5R45umzuxf5mG2U+jIW+Qp5
+74cXGTwc8Rdahi/DByCAjMhA0UyIGAUaVSWo6YgCTIAGdcSIijBQsYkQwxo1gaZL
+MlEh4CqgDKpQoYD60n2mFcznTsixghHRlhJmmFhXGNRMQxE1iiFqsKaplKuEEgg1
+JusmFoUFdtitEOIYDfMJli3WxI+/V97/4P+lm1MV6+I1GdK5zlVDMyWJSxoGOuBI
+VQk2MTZ0VTEMBkygIKhTziQkGYgp3OjVXfIXDzR005Q4wio1kaYoWFcRBAbSZQLE
+EC4wzJ0gDXCBns9LHWqbvvJ0X4A7hUXc79h2xPVWj1guAsoqkolGJCzmo+ECf4BH
+qCg0KNUlZBoACAsJ0TilnAAiK4KfUC7sJpKMORf6NVMs61SBHGmqrCFsYA6EjDAv
+DtouA5RELkBIcHjULuQue9jKF7aFfRl5PoUQESaChiDQqCxplHCOqSLShCqVua4Z
+QKViW9IZUygDCgSCBegU6UzTTGD65pa7bE7U0nubuzndnz9gB23Dok7phCCPCE0h
+x47Yul0ktgoikVA4w3UmUhpysQs489/v4mdW0BDHRFREuRO27KCYQyD/Y5osTOML
+Q5bD/ZaLkIVoIB6Xh0dFS0jcVEzGGeFIl1RTICRDYqYMIJYZoxBKIkJxlA2JMFlS
+uEK4icU5VRAllP7jIpGETpovegrrgjRS4nBf+eGWOX09MfGeft5Y9/544vsn/H2r
+Mo8keGpYJHnKOOOFpI0zquYN/by64K2z5KGmDbil7cOmVQun+73XUFrV+1OyneLg
+1p3J9We+7rOz/daejqPnXxzXenrA9c0zt/eP//bXL+KapqfR3Kr12akPoPyG3AWp
+V46NHviEcnrc9rn4p4FljeXvLR217PYnFZ4OPef65YtJEztnd99aG9WlrpJBXJLH
+psyvnJxKnzrErNTEQU8vOZwMO9snJ6RVq9sWbz1y6dzqR8fEd1y4fbUuZ83U4T2n
+W1pSG21WlV12dFhG+cqr3r21aXu2DL+BunK3rI9t6Dnl3fUBzkxZt3vI4LaOEWRW
+dPTYaWbW2znbToS8clvKjY+XvpRo3Hu1Yt/P59qGdvSvL0sshROX/3KtOGnjnYud
+/d4Zuansh+7x2cO+2t+Dz8U2nGyeerK5cejG3aP8f4y8+GRdEOyN6Wl97NjSuTv2
+PXczsGxw1aGCvOn9Lr1u7Nq/s27J2odXBJNru6tGtN5ETTfiYPr85807t6fFB3LH
+H89bV/LsgPp2f9sJKbS8JrH4mYrXMr+fVJaY9ftkddSkz1auAnve2PdKKJx39lLt
+p6sDLd43i5orxxR2RqfWNcysjju1K2XMjuIrj3/XnjDkTFZX++V7OGvJsZvZCzdd
+OHi3dHFcq9P+4zfnN5z9shIfr3/5kRGzZrQe+O3dA31jvXmZFZXrHzy4pjnpIzjv
+bnrQQjBQZtdWNv4JkmD9xw==
+=EZp6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeyraof
+
+==================================================================

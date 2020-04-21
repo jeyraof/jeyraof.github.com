@@ -32,3 +32,13 @@ body > .container {
 #WorkExperience .work {
     margin-bottom: 50px;
 }
+
+#WorkExperience .label {
+    padding: .1em .3em .15em;
+    font-weight: 400;
+    margin: 0 .5px;
+}
+
+#WorkExperience code {
+    font-size: 75%;
+}
